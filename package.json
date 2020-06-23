@@ -1,0 +1,29 @@
+{
+  "name": "loan-calculator-test-automation",
+  "version": "1.0.0",
+  "description": "This is a loan calulcator test automation application using cypress.io and node.js",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "test",
+    "automation",
+    "loan",
+    "calculator",
+    "end",
+    "to",
+    "end",
+    "ui",
+    "testing"
+  ],
+  "author": "Florante B. Navaja",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.8.0"
+  },
+  "dependencies": {
+    "financejs": "^4.1.0"
+  }
+}

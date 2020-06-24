@@ -79,7 +79,7 @@ describe('The Amortization Schedule table', () => {
         let balance = loanAmount  
         let monthlyInterest = (rate / 12 /100 * newBalance).toFixed(2)
         let monthlyPaidPrincipal = monthlyAmortization - monthlyInterest
-        let newBalance = balance - monthlyPaidPrincipal
+        let newBalance = (balance - monthlyPaidPrincipal).toFixed(2)
 
         for(let x = 0; x <= totalMonths; x++) {
             let month = x + 1;

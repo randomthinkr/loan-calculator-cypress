@@ -116,7 +116,7 @@ describe('The Amortization Schedule table', () => {
                 })
             } )
 
-            balance = newBalance
+            balance = newBalance //update running balance
          }
         
     })

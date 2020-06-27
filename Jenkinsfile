@@ -2,18 +2,18 @@ pipeline {
 
     agent any
 
-     tools {nodejs "nodejs"}
-
     stages {
         stage('Build the Test Automation Application') {
-            steps {
+            nodejs('nodejs-14_40') {
                 sh 'npm install'
             }
         }
 
         stage('End to End Testing') {
             steps {
-                sh 'npx cypress run'
+                nodejs('nodejs-14_40') {
+                    sh 'npx cypress run'
+                }
             }
         }
     }

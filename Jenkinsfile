@@ -4,9 +4,12 @@ pipeline {
 
     stages {
         stage('Build the Test Automation Application') {
-            nodejs('nodejs-14_40') {
-                sh 'npm install'
+            steps {
+                nodejs('nodejs-14_40') {
+                    sh 'npm install'
+                 }
             }
+            
         }
 
         stage('End to End Testing') {
